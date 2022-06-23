@@ -1,27 +1,50 @@
 
 body {
   font-family: Roboto, sans-serif;
+  background: linear-gradient(to bottom right, #9999ff 0%, #ccffff 100%);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
 }
 
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
 .container {
   padding: 0 40px;
   margin-left: 80px;
 }
 
-  /* Свойства ссылок */
+p {
+   font-size: 1.3em;
+}
+
+/* Свойства ссылок */
+
 a {
   display: block;
   text-decoration:none;
-  margin-bottom: 1.2em;
+  margin-bottom: 1em;
   position: relative;
+  font-size: 1.1em;
 }
 
-  /* Что делать при наведении на ссылку */
+  /* Свойства при наведении на ссылку */
+
 a:hover {
-  color:#DA70D6;
+  color:#9900cc;
+  text-decoration:underline;
 }
 
-  /* Этим свойством добавляем подчеркивание через создание псевдокласса */
+ /* Создание псевдокласса для добавления подчеркивания*/
+
 a::after {
   content: '';
   position: absolute;
@@ -41,17 +64,32 @@ h2 {
   margin: 1.25em 0;
 }
 
-  /* Свойства фотографии*/
+/* Свойства фотографии*/
+
 .photo {
-  border-radius: 100px;
-  /* Радиус скругления */
+  border-radius: 50%;
   border: 3px solid transparent;
-  /* Параметры рамки */
   box-shadow: 0 4px 15px 0px rgba(0, 0, 0, 0.52);
   object-fit: cover;
 }
 
-  /* Эффект наведения на картинку */
+  /* Эффект при наведении на картинку */
+
 .photo:hover {
-  border: 3px solid #DA70D6;
+  border: 3px solid #9900cc;
+}
+
+/* Свойства кнопки*/
+
+button {
+   font-size: 0.9em;
+   background-color: #e7e7e7;
+   border-radius: 4px;
+   border: 3px solid transparent;
+}
+
+/* Эффект при наведении на кнопку */
+
+button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
