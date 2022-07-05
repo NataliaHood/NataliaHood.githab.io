@@ -1,9 +1,15 @@
 
 body {
-  font-family: Roboto, sans-serif;
+  font-family: Trebuchet MS, sans-serif;
   background: linear-gradient(to bottom right, #9999ff 0%, #ccffff 100%);
-    background-size: 400% 400%;
-    animation: gradient 15s ease infinite;
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  margin: auto;
+  min-height: 90vh;
+  min-width: 320px;
+  width: 79%;
+  overflow-y: scroll;
+  display: block;
 }
 
 /* Правилом задаю фоновый градиент */
@@ -19,23 +25,25 @@ body {
         background-position: 0% 50%;
     }
 }
-.container {
-  padding: 0 40px;
-  margin-left: 80px;
-}
 
-p {
-   font-size: 1.3em;
+.friends {
+  font-size: 26px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-bottom: 3rem;
 }
 
 /* Свойства ссылок */
 
 a {
+  font-size: 22px;
   display: block;
   text-decoration:none;
   margin-bottom: 1em;
   position: relative;
-  font-size: 1.1em;
+  padding-left: 100px;
+  margin-bottom: 10px;
 }
 
   /* Свойства при наведении на ссылку */
@@ -55,24 +63,42 @@ a::after {
   transform: translateY(1.5em);
   border-bottom: 1px solid #dadada;
   width: 300px;
+  margin-left: 100px;
 }
 
 h1 {
-  font-size: 2em;
+  font-size: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
-h2 {
-  font-size: 1.5em;
-  margin: 1.25em 0;
+p b {
+  font-size: 30px;
+  margin-left: 100px;
+}
+
+button {
+  font-size: 22px;
+  margin-left: 100px;
+  padding: 5px;
+}
+
+.git {
+  margin-bottom: 3rem;
 }
 
 /* Свойства фотографии*/
 
 .photo {
-  border-radius: 50%;
+  border-radius: 100%;
   border: 3px solid transparent;
-  box-shadow: 0 4px 15px 0px rgba(0, 0, 0, 0.52);
+  box-shadow: 0 1px 10px 0px rgba(0, 0, 0, 0.3);
   object-fit: cover;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: -1rem;
 }
 
   /* Эффект при наведении на картинку */
