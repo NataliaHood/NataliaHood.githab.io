@@ -5,7 +5,7 @@ body {
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
   margin: auto;
-  min-height: 90vh;
+  min-height: 110vh;
   min-width: 320px;
   width: 79%;
   overflow-y: scroll;
@@ -91,7 +91,7 @@ button {
 /* Свойства фотографии*/
 
 .photo {
-  border-radius: 100%;
+  border-radius: 20%;
   border: 3px solid transparent;
   box-shadow: 0 1px 10px 0px rgba(0, 0, 0, 0.3);
   object-fit: cover;
