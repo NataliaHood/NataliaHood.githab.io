@@ -5,3 +5,4 @@ const button = document.querySelector('button');
 button.addEventListener('click', function() {
 	alert('Спасибо, что зашел! До новых встреч 🙋🏽‍♀️')
 })
+ 
